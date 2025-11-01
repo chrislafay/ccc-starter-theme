@@ -15,12 +15,31 @@ Text Domain: ccc-primary-theme
   --border-width:3px;
   --border-style:solid;
   --border-radius:5px;
+  --body-font:Helvetica,sans-serif;
+  --header-font:Unbounded,serif;
+}
+
+.wp-site-blocks > header {
+  border-bottom: var(--border-width) var(--border-style);
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+main {
+  margin-top: 0;
+  padding-left: var(--wp--preset--spacing--50);
+  padding-right: var(--wp--preset--spacing--50);
 }
 
 .wp-block-button .wp-block-button__link {
   border-radius: var(--border-radius);
   display: block;
   padding: 0.6em 1em;
+}
+
+body {
+  font-family: var(--body-font);
 }
 
 .has-primary-background-color.has-background {

@@ -5,6 +5,28 @@
     --border-width:3px;
     --border-style:solid;
     --border-radius:5px;
+
+    // Fonts
+    --body-font:Helvetica,sans-serif;
+    --header-font:Unbounded,serif;
+
+    // Font sizes
+    //--wp--preset--font-size--extra-extra-large: create_clamp(1.75rem,2.5rem);
+}
+
+// Navigation bar
+.wp-site-blocks > header {
+    border-bottom:var(--border-width) var(--border-style);
+    position: fixed;
+    width:100%;
+    z-index: 9;
+}
+
+// Body spacing
+main {
+    margin-top: 0;
+    padding-left:var(--wp--preset--spacing--50);
+    padding-right: var(--wp--preset--spacing--50);
 }
 
 // Button sizing
@@ -14,6 +36,10 @@
         display: block;
         padding:.6em 1em;
     }
+}
+
+body {
+    font-family:var(--body-font);
 }
 
 // Default background/text color combinations

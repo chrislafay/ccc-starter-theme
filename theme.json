@@ -6,7 +6,7 @@
       "namespace": "ccc"
     },
     "layout": {
-      "contentSize": "720px",
+      "contentSize": "850px",
       "wideSize": "1200px"
     },
     "color": {
@@ -90,6 +90,9 @@
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--system-sans)",
       "lineHeight": "1.6"
+    },
+    "spacing": {
+      "blockGap": "var(--wp--preset--spacing--50)"
     },
     "elements": {
       "button": {

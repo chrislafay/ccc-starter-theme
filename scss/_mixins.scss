@@ -1,0 +1,13 @@
+@function create_clamp($minSize,$maxSize,$minWidth:300px,$maxWidth:1000px) {
+
+    $slope: calc(($maxSize - $minSize) / ($maxWidth - $minWidth));
+    $intersection: calc((-1 * $minWidth * $slope) + $minSize);
+    $preferred: calc($intersection + ($slope * 100));
+
+    $actualMin: calc($minSize * 1rem);
+    $actualMid: calc($preferred * 1vw);
+    $actualMax: calc($maxSize * 1rem);
+
+    @return $actualMin;
+
+}
