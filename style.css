@@ -40,6 +40,31 @@ main {
 
 body {
   font-family: var(--body-font);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 3.2777777778vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 2.5833333333vw, 2.75rem);
+}
+
+h3 {
+  font-size: clamp(1.75rem, 1.9444444444vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.35rem, 1.6611111111vw, 1.75rem);
+}
+
+h5 {
+  font-size: clamp(1.2rem, 1.4333333333vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.2333333333vw, 1.3rem);
 }
 
 .has-primary-background-color.has-background {

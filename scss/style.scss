@@ -17,6 +17,6 @@ Text Domain: ccc-primary-theme
 $ns: 'ccc-';
 
 // Import component partials below.
-@use '_mixins';
-@use '_root';
-@use '_block-styles';
+@import '_mixins';
+@import '_root';
+@import '_block-styles';

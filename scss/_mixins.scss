@@ -1,4 +1,4 @@
-@function create_clamp($minSize,$maxSize,$minWidth:300px,$maxWidth:1000px) {
+@mixin create-clamp($minSize,$maxSize,$minWidth:30,$maxWidth:120) {
 
     $slope: calc(($maxSize - $minSize) / ($maxWidth - $minWidth));
     $intersection: calc((-1 * $minWidth * $slope) + $minSize);
@@ -8,6 +8,10 @@
     $actualMid: calc($preferred * 1vw);
     $actualMax: calc($maxSize * 1rem);
 
-    @return $actualMin;
+    font-size:clamp($actualMin, $actualMid, $actualMax);
 
+}
+
+@mixin test-this($minimum) {
+    font-size:$minimum;
 }
