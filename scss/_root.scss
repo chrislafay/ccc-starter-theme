@@ -1,0 +1,22 @@
+:root {
+    --mobile-viewport-size: 750px;
+
+    // Borders
+    --border-width:3px;
+    --border-style:solid;
+    --border-radius:5px;
+}
+
+// Button sizing
+.wp-block-button {
+    .wp-block-button__link {
+        border-radius:var(--border-radius);
+        display: block;
+        padding:.6em 1em;
+    }
+}
+
+// Default background/text color combinations
+.has-primary-background-color.has-background { color:var(--wp--preset--color--light); }
+.has-secondary-background-color.has-background { color:var(--wp--preset--color--dark); }
+.has-tertiary-background-color.has-background { color:var(--wp--preset--color--light); }

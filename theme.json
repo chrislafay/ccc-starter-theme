@@ -10,6 +10,8 @@
       "wideSize": "1200px"
     },
     "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
       "palette": [
         {
           "slug": "primary",
@@ -48,6 +50,11 @@
       ],
       "fontSizes": [
         {
+          "slug": "extra-small",
+          "size": "0.75rem",
+          "name": "Extra Small"
+        },
+        {
           "slug": "small",
           "size": "0.875rem",
           "name": "Small"
@@ -61,6 +68,16 @@
           "slug": "large",
           "size": "1.5rem",
           "name": "Large"
+        },
+        {
+          "slug": "extra-large",
+          "size": "2rem",
+          "name": "Extra Large"
+        },
+        {
+          "slug": "extra-extra-large",
+          "size": "2.5rem",
+          "name": "Extra Extra Large"
         }
       ]
     }
@@ -73,6 +90,45 @@
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--system-sans)",
       "lineHeight": "1.6"
+    },
+    "elements": {
+      "button": {
+        "color": {
+          "text": "inherit",
+          "background": "inherit"
+        },
+        "border": {
+          "radius": "inherit"
+        },
+        "spacing": {
+          "padding": {
+            "top": "inherit",
+            "right": "inherit",
+            "bottom": "inherit",
+            "left": "inherit"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "variations": {
+          "outline": {
+            "border": {
+              "width": "var(--border-width)",
+              "style": "var(--border-style)"
+            },
+            "spacing": {
+              "padding": {
+                "top": "inherit",
+                "right": "inherit",
+                "bottom": "inherit",
+                "left": "inherit"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "templateParts": [

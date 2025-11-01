@@ -10,19 +10,6 @@ Tested up to: 6.4
 Requires PHP: 7.4
 Text Domain: ccc-primary-theme
 */
-:root {
-  --mobile-viewport-size: 750px;
-  --border-width:3px;
-  --border-style:solid;
-  --border-radius:5px;
-}
-
-.wp-block-button .wp-block-button__link {
-  border-radius: var(--border-radius);
-  display: block;
-  padding: 0.6em 1em;
-}
-
 .has-primary-background-color.has-background {
   color: var(--wp--preset--color--light);
 }
@@ -31,15 +18,6 @@ Text Domain: ccc-primary-theme
   color: var(--wp--preset--color--dark);
 }
 
-.has-tertiary-background-color.has-background {
+.has-tertiart-background-color.has-background {
   color: var(--wp--preset--color--light);
-}
-
-@media screen and (max-width: var(--mobile-viewport-size)) {
-  .wp-block-columns.is-style-swap-on-mobile > .wp-block-column:first-child {
-    order: 2;
-  }
-  .wp-block-columns.is-style-swap-on-mobile > .wp-block-column:last-child {
-    order: 1;
-  }
 }/*# sourceMappingURL=style.css.map */

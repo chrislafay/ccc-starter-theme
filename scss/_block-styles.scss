@@ -1,0 +1,13 @@
+// Block style modifiers.
+
+@media screen and (max-width: var(--mobile-viewport-size)) {
+    .wp-block-columns.is-style-swap-on-mobile {
+        > .wp-block-column:first-child {
+            order: 2;
+        }
+
+        > .wp-block-column:last-child {
+            order: 1;
+        }
+    }
+}
