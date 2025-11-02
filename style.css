@@ -30,6 +30,22 @@ hr.wp-block-separator {
   margin-block-end: var(--wp--preset--spacing--70) !important;
 }
 
+.ccc-style-guide hr + h2 {
+  line-height: 1;
+}
+.ccc-style-guide hr + h2:before {
+  background-color: var(--wp--preset--color--secondary);
+  border-radius: 99999px;
+  content: " ";
+  display: inline-block;
+  height: 1em;
+  margin-right: 0.5em;
+  width: 1em;
+}
+.ccc-style-guide hr + h2 + p {
+  font-style: italic;
+}
+
 :root {
   --border-width:3px;
   --border-style:solid;
@@ -171,7 +187,7 @@ h6 {
 }
 
 .wp-block-yoast-faq-block .schema-faq-section {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--wp--preset--color--dark);
   padding-block: var(--wp--preset--spacing--40);
   transition: background-color 0.3s ease;
 }
@@ -218,4 +234,11 @@ h6 {
 }
 .wp-block-yoast-faq-block .schema-faq-section.is-open .schema-faq-answer {
   opacity: 1;
+}
+
+.ccc-icon-list > p {
+  text-align: center;
+}
+.ccc-icon-list > p .wp-font-awesome-icon {
+  margin-right: var(--wp--preset--spacing--40);
 }/*# sourceMappingURL=style.css.map */
