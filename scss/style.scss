@@ -15,8 +15,16 @@ Text Domain: ccc-primary-theme
 // Use #{$ns} prefix for top-level selectors within partials.
 
 $ns: 'ccc-';
+$mobile-viewport-size: 750px;
 
 // Import component partials below.
 @import '_mixins';
+@import '_sample-styles'; // Remove this before doing any client styles
 @import '_root';
 @import '_block-styles';
+@import '_cta';
+@import '_image-column';
+@import '_icon-pod';
+@import '_hero';
+@import '_emphasis-text';
+@import '_yoast-faq-block';

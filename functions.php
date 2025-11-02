@@ -44,11 +44,24 @@ add_action('after_setup_theme', 'ccc_primary_theme_setup');
  */
 function ccc_primary_theme_enqueue_assets(): void
 {
+    $theme_version = wp_get_theme()->get('Version');
+
     wp_enqueue_style(
         'ccc-primary-theme-style',
         get_stylesheet_uri(),
         [],
-        wp_get_theme()->get('Version')
+        $theme_version
+    );
+
+    $script_path = get_template_directory() . '/js/main.js';
+    $script_version = file_exists($script_path) ? filemtime($script_path) : $theme_version;
+
+    wp_enqueue_script(
+        'ccc-primary-theme-main',
+        get_template_directory_uri() . '/js/main.js',
+        [],
+        $script_version,
+        true
     );
 }
 add_action('wp_enqueue_scripts', 'ccc_primary_theme_enqueue_assets');
