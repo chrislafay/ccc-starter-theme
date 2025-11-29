@@ -19,7 +19,7 @@ $mobile-viewport-size: 750px;
 
 // Import component partials below.
 @import '_mixins';
-@import '_sample-styles'; // Remove this before doing any client styles
+//@import '_sample-styles'; // Remove this before doing any client styles
 @import '_root';
 @import '_block-styles';
 @import '_cta';
